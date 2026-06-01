@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Character Tokenization Test Page kzzprobe9137</title>
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+  code { background: #f2f2f2; padding: 1px 4px; }
+  caption { text-align: left; font-weight: 600; margin-bottom: .4rem; }
+</style>
+</head>
+<body>
+
+<h1>Search character tokenization test</h1>
+
+<!-- Crawl confirmation: search this nonce alone. When it returns this page, the page is indexed. -->
+<p>Indexing nonce: <strong>kzzprobe9137</strong></p>
+
+<p>
+Each row below places two coined words around one character, in an <em>attached</em> form
+(no spaces) and a <em>spaced</em> form. The coined words appear nowhere else on the web,
+so a phrase search for the two words separated by a single space is fully attributable:
+a <strong>match</strong> means the engine treats that character as a word separator that
+preserves adjacency; a <strong>no-match</strong> means the character blocked adjacency
+(held a position, or fused the two words into one token).
+</p>
+
+<h2>Control (must match — proves indexing + phrase search work)</h2>
+<p>zafuctrl bornctrl</p>
+<p>Test query: <code>"zafuctrl bornctrl"</code></p>
+
+<h2>Attached form (no spaces)</h2>
+<table>
+<caption>Search each as a phrase: "zafuXXX bornXXX"</caption>
+<tr><th>Character</th><th>String on page</th></tr>
+<tr><td>plus +</td><td>zafuplus+bornplus</td></tr>
+<tr><td>hyphen -</td><td>zafuhyp-bornhyp</td></tr>
+<tr><td>underscore _</td><td>zafuund_bornund</td></tr>
+<tr><td>period .</td><td>zafudot.borndot</td></tr>
+<tr><td>slash /</td><td>zafusla/bornsla</td></tr>
+<tr><td>ampersand &amp;</td><td>zafuamp&amp;bornamp</td></tr>
+<tr><td>at @</td><td>zafuat@bornat</td></tr>
+<tr><td>hash #</td><td>zafuhash#bornhash</td></tr>
+<tr><td>dollar $</td><td>zafudol$borndol</td></tr>
+<tr><td>percent %</td><td>zafupct%bornpct</td></tr>
+<tr><td>caret ^</td><td>zafucar^borncar</td></tr>
+<tr><td>tilde ~</td><td>zafutil~borntil</td></tr>
+<tr><td>equals =</td><td>zafueq=borneq</td></tr>
+<tr><td>pipe |</td><td>zafupipe|bornpipe</td></tr>
+<tr><td>colon :</td><td>zafucol:borncol</td></tr>
+<tr><td>comma ,</td><td>zafucom,borncom</td></tr>
+<tr><td>asterisk *</td><td>zafustar*bornstar</td></tr>
+<tr><td>exclamation !</td><td>zafubang!bornbang</td></tr>
+</table>
+
+<h2>Spaced form (space – char – space)</h2>
+<table>
+<caption>Search each as a phrase: "zafuXXXs bornXXXs"</caption>
+<tr><th>Character</th><th>String on page</th></tr>
+<tr><td>plus +</td><td>zafupluss + bornpluss</td></tr>
+<tr><td>hyphen -</td><td>zafuhyps - bornhyps</td></tr>
+<tr><td>underscore _</td><td>zafuunds _ bornunds</td></tr>
+<tr><td>period .</td><td>zafudots . borndots</td></tr>
+<tr><td>slash /</td><td>zafuslas / bornslas</td></tr>
+<tr><td>ampersand &amp;</td><td>zafuamps &amp; bornamps</td></tr>
+<tr><td>at @</td><td>zafuats @ bornats</td></tr>
+<tr><td>hash #</td><td>zafuhashs # bornhashs</td></tr>
+<tr><td>dollar $</td><td>zafudols $ borndols</td></tr>
+<tr><td>percent %</td><td>zafupcts % bornpcts</td></tr>
+<tr><td>caret ^</td><td>zafucars ^ borncars</td></tr>
+<tr><td>tilde ~</td><td>zafutils ~ borntils</td></tr>
+<tr><td>equals =</td><td>zafueqs = borneqs</td></tr>
+<tr><td>pipe |</td><td>zafupipes | bornpipes</td></tr>
+<tr><td>colon :</td><td>zafucols : borncols</td></tr>
+<tr><td>comma ,</td><td>zafucoms , borncoms</td></tr>
+<tr><td>asterisk *</td><td>zafustars * bornstars</td></tr>
+<tr><td>exclamation !</td><td>zafubangs ! bornbangs</td></tr>
+</table>
+
+</body>
+</html>
